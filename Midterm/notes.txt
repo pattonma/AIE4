@@ -1,0 +1,57 @@
+pt1
+-read through docs
+-does not have to be crazy polished, it's just a quick prototype (just to start the idea of iteration)
+-one of the docs has some tables, implement a conditional chunker for those
+-use an llm to determine what kinds of questions someone may ask about this
+-figure out 2 chunking 
+
+pt2
+-does not have to be crazy polished, it's just a quick prototype (just to start the idea of iteration)
+-quick lcel rag on hugging face
+
+pt3
+-use ragas to create a baseline to compare against
+-just the standard metrics described
+-figure out conclusions
+
+pt4
+-fine tune an embedding model
+-alteratives to llama8b?
+-swap out existing model with the fine tuned one
+-rerun ragas 
+
+pt5
+-implement the other chunking strat, rerun ragas
+-which is better, explain
+
+pt6
+-make sure you have a plan for the future (how are we updating this? How are we adding context as new context appears?)
+
+
+
+
+
+
+
+2 diff embedding models
+2 diff chunking strats
+
+iterate and assess the combo of those guys
+
+of the four, whats the best and why?
+
+
+
+1. split (chunkA, chunkB)
+- what are these strats?
+2. Proof of concept (chunkA+Emb1) -> HF
+- build initial implementation, get on HF
+3. SDG chunkA+EM1 -> ragas make a baseline
+4. FTEM chunkA+EM2 -> HF
+- fine tune the embedding model, put it on HF
+5. EVAL 
+- chunkA+EM2
+- chunkb+EM1
+- chunkB+EM2
+6. story and future consideration
+- share it on HF
